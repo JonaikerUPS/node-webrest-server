@@ -1,0 +1,147 @@
+:root {
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-http: #38bdf8;
+            --accent-https: #34d399;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            width: 100%;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-top: 0;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #38bdf8, #818cf8, #34d399);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.05em;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--card-border), transparent);
+            margin: 25px 0;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .badge {
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge-http {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent-http);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        .badge-https {
+            background: rgba(52, 211, 153, 0.1);
+            color: var(--accent-https);
+            border: 1px solid rgba(52, 211, 153, 0.2);
+        }
+
+        .pulse {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .badge-http .pulse { background-color: var(--accent-http); box-shadow: 0 0 10px var(--accent-http); }
+        .badge-https .pulse { background-color: var(--accent-https); box-shadow: 0 0 10px var(--accent-https); }
+
+        .console-box {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: left;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            color: #34d399;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            margin-bottom: 25px;
+        }
+
+        .console-line {
+            margin: 5px 0;
+            display: flex;
+        }
+
+        .console-prompt {
+            color: #818cf8;
+            margin-right: 10px;
+            user-select: none;
+        }
+
+        .btn {
+            background: #ffffff;
+            color: #0f172a;
+            border: none;
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+            background: #f1f5f9;
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
