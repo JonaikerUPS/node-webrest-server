@@ -1,5 +1,5 @@
-import { Server } from "./presentation/server"
-import { envs } from "./config/envs"
+import { Server } from "./presentation/server.js"
+import { envs } from "./config/envs.js"
 
 
 

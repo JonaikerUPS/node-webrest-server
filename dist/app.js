@@ -7,8 +7,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import { Server } from "./presentation/server";
-import { envs } from "./config/envs";
+import { Server } from "./presentation/server.js";
+import { envs } from "./config/envs.js";
 (() => __awaiter(void 0, void 0, void 0, function* () {
     main();
 }))();
